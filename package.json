@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter web --filter api run dev",
+    "lint": "pnpm -r --filter web --filter api run lint",
+    "build": "pnpm -r --filter web --filter api run build"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
